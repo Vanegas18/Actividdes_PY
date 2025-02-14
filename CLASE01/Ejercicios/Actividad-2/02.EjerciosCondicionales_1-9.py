@@ -54,7 +54,7 @@ en cuenta su categoría.
 # sueldo = 0
 
 # for i in range(empleados): 
-#   print(f"Empleado #{i}")
+#   print(f"Empleado #{i+1}")
 #   categoriaEmpleado = input("Ingrese su categoria para asignarle su sueldo: ")
 
 #   match categoriaEmpleado:
@@ -68,7 +68,10 @@ en cuenta su categoría.
 #       sueldo = 2000000
 #     case "Vendedor":
 #       sueldo = 1000000
-#   print(f"El empleado {i} pertenece al categoria: {categoriaEmpleado} y tiene un sueldo de: ${sueldo}")
+#     case _:
+#       print("La categoria ingresada no hace parte")
+      
+#   print(f"El empleado {i+1} pertenece a la categoria: {categoriaEmpleado} y tiene un sueldo de: ${sueldo:.2f}")
 
 print("EJERCICIO 5")
 
@@ -82,20 +85,25 @@ diferentes.
 # numero1 = int(input("Ingrese el numero 1: "))
 # numero2 = int(input("Ingrese el numero 2: "))
 # numero3 = int(input("Ingrese el numero 3: "))
+# mayor = max(numero1, numero2, numero3)
+# menor = min(numero1, numero2, numero3)
 
-# if numero1 == numero2 == numero3:
-#   print("Los tres numero son iguales.")
+
+# if numero1 == numero2 and numero1 == numero3:
+#   resultado = "Los tres numero son iguales."
+# elif numero1 == numero2:
+#   resultado = "Los numeros {numero1} y {numero2} son iguales"
+# elif numero1 == numero3:
+#   resultado = "Los numeros {numero1} y {numero3} son iguales"
+# elif numero2 == numero3:
+#   resultado = "Los numeros {numero2} y {numero3} son iguales"
 # else:
-#   if numero1 == numero2 or numero1 == numero3 or numero2 == numero3:
-#     print("Hay dos numeros iguales.")
-#   else:
-#     print("Los tres numeros son diferentes.")
+#   resultado = "Los tres numeros son diferentes"
+  
+# print(resultado)
+# print(f"El numero mayor es: {mayor}")
+# print(f"El numero menor es: {menor}")
 
-#   mayor = max(numero1, numero2, numero3)
-#   menor = min(numero1, numero2, numero3)
-
-#   print(f"El numero mayor es: {mayor}")
-#   print(f"El numero menor es: {menor}")
 
 print("EJERCICIO 6")
 
@@ -106,11 +114,24 @@ y si captura un carácter escriba su nombre.
 
 """
 
-# gradosCentigrados = int(input("Introduzca los grados centígrados a convertir: "))
-# kelvin = gradosCentigrados + 273.15
+# entrada = input("Ingrese un número entero, un número flotante o un carácter: ")
 
-# print(f"La conversion de {gradosCentigrados} grados centígrados a Kelvin es: {kelvin} ")
-
+# if entrada.isdigit():
+#   gradoCentigrados = int(entrada)
+#   kelvin = gradoCentigrados + 273.15
+#   print(f"{gradoCentigrados} grados centígrados a kelvin son:  {kelvin} kelvin")
+# elif entrada.replace(".", "", 1).isdigit():
+#   numeroFlotante = float(entrada)
+  
+#   if (numeroFlotante > 10.5):
+#     print(f"{numeroFlotante} es mayor a 10.5")
+#   else:
+#     print(f"{numeroFlotante} es menor a 10.5")
+    
+# else:
+#   print(entrada)
+  
+  
 print("EJERCICIO 7")
 
 """

@@ -21,8 +21,11 @@ parcial, escribe aprobado si la calificación es superior a 3.
 
 # calificacion = float(input("Ingrese su calificación: "))
 
-# if (calificacion >= 3):
+
+# if (calificacion >= 3 and calificacion <= 5):
 #   print("Estudiante aprobado")
+# elif (calificacion > 5):
+#   print("La calificación debe ser entre 1 a 5")
 # else:
 #   print("Estudiante no aprobado")
 
